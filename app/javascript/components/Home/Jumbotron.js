@@ -2,11 +2,40 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const Section = styled.section`
-background-color: #d74234;
-min-height: 550px;
-padding: 250px 0;
-color: #fff;
+	background-color: #d74234;
+	min-height: 550px;
+	padding: 100px 0;
+	color: #fff;
 ` 
+
+const Header = styled.h1`
+	color: #fff;
+	font-weight:700;
+	font-size:40px;
+	line-height:52px;
+`
+
+const Subhead = styled.p`
+	font-size:18px;
+	font-weight:500;
+`
+
+const Button = styled.a`
+	display:inline-block;
+	text-decoration: none;
+	font-weight:bold;
+	cursor: pointer;
+	color: #333;
+	padding: 10px 20px;
+	font-size:18px;
+	// width: 100%;
+	border-radius: 0;
+	background: #fff;
+	box-shadow: 0px 0px 0px 3px #473228,
+		-6px 6px #ef5f17,
+		-6px 6px 0px 3px #473228;
+`
+
 const Jumbotron = () => {
 return (
 	<Section className="home-section--1">
@@ -14,8 +43,11 @@ return (
 			<div className="row"> 
 				<div className="col col-sm-12 col-md-5">
 					<div className="pt-4 mt-4">
-						<h1>React For Rails Developers</h1>
-						<p>Supercharge your Ruby on Rails App with React.js</p>
+						<Header>React For Rails Developers</Header>
+						<Subhead>Supercharge your Ruby on Rails App with React.js</Subhead>
+						<div className="cta-wraper">
+							<Button className="btn fancy-btn">Get Started</Button>
+						</div>
 					</div>
 				</div>
 				<div className="col col-sm-12 col-md-7">

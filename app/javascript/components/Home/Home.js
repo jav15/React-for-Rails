@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import Jumbotron from './Jumbotron'
  class Home extends Component {
      constructor(){
          super()
@@ -15,7 +15,9 @@ import React, { Component } from 'react'
 
      render() {
          return (
-            <div>This is our Home component.</div>
+            <div>
+                <Jumbotron/>
+            </div>
          )
      }
  }
